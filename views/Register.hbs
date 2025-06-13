@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- enctype is important for file upload -->
+        <form class="form" action="/register" method="POST" enctype="multipart/form-data">
+            <h2>Register</h2>
+
+            <label for="username">Username:</label>
+            <input type="text" name="username" required />
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" required />
+
+            <label for="companyname">Company:</label>
+            <input type="text" name="companyname" required />
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" required />
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" required /><br>
+
+            <label for="img">Select Image:</label>
+            <input type="file" name="img" accept="image/*" required /><br>
+
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+</body>
+
+</html>

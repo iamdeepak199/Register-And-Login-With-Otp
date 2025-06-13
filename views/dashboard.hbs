@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <div class="home-container">
+        <h1>Thank you, {{username}}</h1>
+        <p>You are now logged in.</p>
+        <div class="button-container">
+            <form action="/delete" method="POST">
+                <button type="submit" class="btn">Delete Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
