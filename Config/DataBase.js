@@ -1,25 +1,21 @@
-const mysql = require('mysql2/promise'); // ⬅️ notice 'promise'
+const mysql = require('mysql2');
 const chalk = require('chalk');
 
-const db = mysql.createPool({
-  host: 'b0hlru4zn10bbwlt4crd-mysql.services.clever-cloud.com',
-  port: 3306,
-  user: 'uysi3iard7aglisl',
-  password: 'gRbaOI6kX9Ed3atQ5NP1',
-  database: 'b0hlru4zn10bbwlt4crd',
-  waitForConnections: true,
-  connectionLimit: 5, // max allowed
-  queueLimit: 0
+const db = mysql.createConnection({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+   PORT:  process.env.DB_PORT
 });
 
-(async () => {
-  try {
-    const connection = await db.getConnection();
-    console.log(chalk.green.inverse('✅ Connected to MySQL (Render-safe)'));
-    connection.release();
-  } catch (err) {
-    console.error('❌ Connection error:', err);
-  }
-})();
+
+db.connect(err => {
+    if (err) {
+        console.error('❌ Error connecting to MySQL database :', err);
+        return;
+    }
+    console.log(chalk.blue.italic.inverse('✅ Connected to MySQL database....'));
+});
 
 module.exports = { db };
