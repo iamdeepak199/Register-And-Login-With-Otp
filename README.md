@@ -102,10 +102,18 @@ A secure Node.js-based authentication system where users can **register and log 
 
 📷 Screenshots
 
+   ![pic1](https://github.com/iamdeepak199/Register-And-Login-With-Otp/blob/main/Run.jpg)
 
-   ![pic0](https://github.com/iamdeepak199/Keeper-App/blob/main/Keeper%20App.jpg)
+   ![pic0]( https://github.com/iamdeepak199/Register-And-Login-With-Otp/blob/main/register.jpg)
    
-   ![pic1](https://github.com/iamdeepak199/Keeper-App/blob/main/database_App.jpg)
+   ![pic1](https://github.com/iamdeepak199/Register-And-Login-With-Otp/blob/main/login.jpg)
+   
+   ![pic0]( https://github.com/iamdeepak199/Register-And-Login-With-Otp/blob/main/otp.jpg)
+
+   ![pic0](https://github.com/iamdeepak199/Register-And-Login-With-Otp/blob/main/database.jpg)
+
+
+ 
 
 
 
